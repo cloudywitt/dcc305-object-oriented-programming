@@ -6,7 +6,7 @@ public class Main {
 
         employee.name = "Kob";
         employee.salary = 4300;
-        employee.department = "TI";
+        employee.department = "IT";
         employee.rg = "32.474.128-5";
         employee.entryDate = "02/03/2020";
 
