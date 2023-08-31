@@ -1,3 +1,5 @@
+package aula04;
+
 import java.text.NumberFormat;
 
 public class Employee {

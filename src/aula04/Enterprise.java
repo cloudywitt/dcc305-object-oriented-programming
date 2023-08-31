@@ -1,3 +1,5 @@
+package aula04;
+
 public class Enterprise {
     String name;
     String cnpj;

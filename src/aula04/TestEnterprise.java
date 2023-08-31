@@ -1,3 +1,5 @@
+package aula04;
+
 public class TestEnterprise {
     public static void main(String[] args) {
         Enterprise enterprise = new Enterprise();
