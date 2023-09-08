@@ -1,7 +1,7 @@
 package aula06;
 
 public class BankAccount {
-    double balance;
+    private double balance;
 
     public double getBalance() {
         return this.balance;
@@ -11,17 +11,23 @@ public class BankAccount {
         this.balance += amount;
     }
 
-    public void withdraw(double amount) { // maybe some security stuffs to make it more real life like
+    public void withdraw(double amount) {
         if (amount > this.balance) {
             System.out.println("Not enough money");
+        } else if (amount < 0) {
+            System.out.println("Please, enter a valid amount");
+        } else {
+            this.balance -= amount;
+        }
+    }
+
+    public void updateAccount(double percentage) {
+        if (percentage < 0) {
+            System.out.println("Can not update less than 0%");
 
             return;
         }
 
-        this.balance -= amount;
-    }
-
-    public void updateAccount(float percentage) {
         this.balance = this.balance + (this.balance * percentage / 100);
     }
 }
