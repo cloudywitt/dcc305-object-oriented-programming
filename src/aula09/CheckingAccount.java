@@ -2,7 +2,7 @@ package aula09;
 
 public class CheckingAccount extends BankAccount {
     @Override
-    public void payIn(double amount) {
+    public void payIn(double amount) throws InvalidAmountException {
         double fee = 0.10;
 
         super.payIn(amount - fee);
