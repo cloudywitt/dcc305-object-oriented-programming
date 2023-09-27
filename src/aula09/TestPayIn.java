@@ -7,7 +7,7 @@ public class TestPayIn {
         try {
             checkingAcc.payIn(-1.0);
 //              IllegalArgumentException e
-        } catch (IllegalArgumentException e) {
+        } catch (InvalidAmountException e) {
 //            System.out.println("You tried an invalid amount");
             System.out.println(e.getMessage());
         }
